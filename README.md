@@ -36,7 +36,7 @@ You have **24 hours** to make as much money as possible then escape.
     - It doesn't need to find the best solution
     - Find the best solution you can!
 
-- Your solution has to run on a common laptop in under 3 minutes for 1,000 cities and average solution length ~25
+- Your solution has to run on a common laptop in under 3 minutes for the 10,000 cities dataset
     - You can use everything you want to achieve this:
         - Use numpy, pandas, functions, algorithms
         - You can use parallelism
