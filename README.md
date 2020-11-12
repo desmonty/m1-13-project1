@@ -68,6 +68,8 @@ robber_algorithm(df)
         - Branch & Bound
         - Prune & Search
  
+ Start with something that's easier (brute-force or greedy algorithm) and then work towards a better design once it works.
+ 
  - Because there are too many banks at each step, you will need to select only some candidates to explore
  
  - If you find yourself doing many **Nearest neighbors** type queries, consider using a [KD-Tree](https://en.wikipedia.org/wiki/K-d_tree) or a Ball Tree to speed it up.
