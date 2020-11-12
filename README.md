@@ -55,3 +55,22 @@ robber_algorithm(df)
 # Output is a list of bank IDs
 [OUTPUT] --> [664, 2341, 26, 998, 9583, 24, 1, 444, 6783]
 ```
+
+# Hints:
+
+- Most of the design paradigms we saw in class will work for this:
+    - Divide-and-conquer
+    - Brute Force
+    - Greedy Algorithm
+    - Dynamic Programming
+    - Backtracking
+    - Some we haven't seen:
+        - Branch & Bound
+        - Prune & Search
+ 
+ - Because there are too many banks at each step, you will need to select only some candidates to explore
+ 
+ - If you find yourself doing many **Nearest neighbors** type queries, consider using a [KD-Tree](https://en.wikipedia.org/wiki/K-d_tree) or a Ball Tree to speed it up.
+     - There are good implementations of KD-Trees and nearest neighbours in scipy, sklearn and [this library](https://github.com/lmcinnes/pynndescent)
+
+- You can work your algorithm backwards (starting at the end and backing up to the starting point) or forwards (finding a starting point and looping until there is no time left). They will lead to different designs however
