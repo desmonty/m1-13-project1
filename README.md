@@ -64,6 +64,7 @@ robber_algorithm(df)
     - Greedy Algorithm
     - Dynamic Programming
     - Backtracking
+    - Breadth-first & Depth-first search
     - Some we haven't seen:
         - Branch & Bound
         - Prune & Search
