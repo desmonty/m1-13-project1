@@ -1,4 +1,5 @@
-# m1-12-project1
+# Project1
+
 The bank robber algorithm
 
 --------------
