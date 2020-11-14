@@ -29,7 +29,7 @@ You have **24 hours** to make as much money as possible then escape.
 - You travel between banks at 30 km/h. You have to travel from one bank to the next!
     - Remember the formula to calculate the distance between two points.
     - The coordinates are in kilometers.
-        - So (1, 1) and (2, 2) are one kilometer apart. 
+        - So (1, 1) and (1, 2) are one kilometer apart. 
         - This would take 1 / 30 hour = 2 minutes to travel
 
 - Your solution should be an approximative/heuristic algorithm
