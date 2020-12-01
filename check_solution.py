@@ -4,17 +4,18 @@ import math
 def distance(x1, y1, x2, y2):
     return math.hypot(x2 - x1, y2 - y1)
 
-def check_solution(travel_list, df, speed=30.):
+
+def check_solution(travel_list, df, speed=30., verbose: int = 1):
     """
     Check a bank robber algorithm solution
-    
+
     input:
     ------
     travel_list: a list of integers
         Your solution to the bank robber problem
         Bank IDs are row indeces into the df passed
     df: pd.DataFrame
-        The algorithm input formatted dataframe 
+        The algorithm input formatted dataframe
         (id,x_coordinate,y_coordinate,money,time (hr))
     speed: float
         The km/h speed of travel
@@ -40,12 +41,13 @@ def check_solution(travel_list, df, speed=30.):
         f"Used more than 24h! Time left: {t_remaining}"
     )
     # still gotta get to (0, 0)
-    dist = distance(row['x_coordinate'],row['y_coordinate'],0,0)
+    dist = distance(row['x_coordinate'], row['y_coordinate'], 0, 0)
     final_t = t_remaining - (dist / speed)
     assert final_t >= 0, (
         f"Not enough time to get to helicopter!\n"
         f"Time left after last bank: {t_remaining}\n"
         f"Distance to (0,0) helipad: {dist}\n"
     )
-    print(f"Time Remaining: {final_t}")
+    if verbose > 0:
+        print(f"Time Remaining: {final_t}")
     return score
